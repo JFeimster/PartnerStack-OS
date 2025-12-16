@@ -16,6 +16,9 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -39,11 +42,6 @@
             }
         }
     </script>
-    
-    <style>
-        .drop-shadow-glow { filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.5)); }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.15); }
-    </style>
 </head>
 <body class="bg-moon-dark text-slate-100 font-sans antialiased overflow-x-hidden">
 
@@ -258,8 +256,7 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- Interactive Logic -->
+    <script src="script.js"></script>
 </body>
 </html>
