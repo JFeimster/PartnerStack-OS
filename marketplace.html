@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Marketplace | Funding Partners OS</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        moon: {
+                            dark: '#0f172a', /* Slate 900 */
+                            darker: '#020617', /* Slate 950 */
+                            card: '#1e293b', /* Slate 800 */
+                            teal: '#2dd4bf', /* Teal 400 */
+                            amber: '#d97706', /* Amber 600 */
+                            amberhover: '#b45309', /* Amber 700 */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        header: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .drop-shadow-glow { filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.5)); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.15); }
+    </style>
+</head>
+<body class="bg-moon-dark text-slate-100 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="w-full py-5 px-6 md:px-12 flex justify-between items-center border-b border-slate-800 bg-moon-dark/95 backdrop-blur z-20 sticky top-0">
+        <div class="flex items-center gap-2 text-2xl font-header font-bold tracking-wider text-white">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <i class="fa-solid fa-moon text-moon-teal drop-shadow-glow"></i> 
+                FUNDING PARTNERS <span class="text-moon-teal">OS</span>
+            </a>
+        </div>
+        <!-- Standardized Menu: Marketplace Active -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-sm font-semibold text-slate-300 hover:text-moon-teal transition-colors">Home</a>
+            <a href="marketplace.html" class="text-sm font-bold text-white border-b-2 border-moon-teal pb-0.5">Marketplace</a>
+            <a href="#" class="text-sm font-semibold text-slate-400 hover:text-white transition-colors">
+                Partner Login <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden text-2xl text-white">
+            <a href="index.html"><i class="fa-solid fa-home"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1642543492481-44e81e3914a7?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-5"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-moon-dark via-moon-dark/95 to-moon-dark"></div>
+        
+        <div class="container mx-auto px-6 max-w-4xl text-center relative z-10">
+            <div class="inline-block px-4 py-1 rounded-full border border-moon-teal/30 bg-moon-teal/10 text-moon-teal text-sm font-semibold mb-6">
+                THE ARMORY
+            </div>
+            <h1 class="text-4xl md:text-6xl font-header font-bold text-white mb-6">
+                The Partner <span class="text-moon-teal">Marketplace</span>
+            </h1>
+            <p class="text-xl text-slate-300 font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+                Helping everyday hustlers become high-commission funding partners so they can break free from the system, build real income, and empower small businesses — one approval at a time.
+            </p>
+            <p class="text-slate-500 text-sm font-bold uppercase tracking-widest">
+                Pick your vehicle. Start earning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Top Pick: David Allen Capital -->
+    <section class="pb-12 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 border border-moon-teal/30 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-[0_0_40px_rgba(45,212,191,0.1)]">
+                <!-- Badge -->
+                <div class="absolute top-0 right-0 bg-moon-teal text-moon-darker font-bold px-4 py-1 text-xs uppercase tracking-wider rounded-bl-xl">
+                    Top Pick
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-slate-100 flex items-center justify-center text-moon-darker text-3xl font-bold shadow-lg flex-shrink-0">
+                        DAC
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-3xl font-header font-bold text-white mb-2">David Allen Capital</h2>
+                        <p class="text-moon-teal font-bold mb-4 uppercase tracking-wide text-sm">Build Your Own Funding Agency</p>
+                        <p class="text-slate-300 mb-6 leading-relaxed">
+                            The gold standard for agency builders. Sign up as a DAC Agent to access a massive lending marketplace. Earn 4%–8% on personal deals + earn overrides on your team's production.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <a href="https://bit.ly/DACaffiliate" target="_blank" class="bg-moon-amber hover:bg-moon-amberhover text-white px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-bolt"></i> Become an Agent
+                            </a>
+                            <a href="https://bit.ly/47TX5SO" target="_blank" class="border border-slate-600 hover:border-white text-slate-300 hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-play"></i> Watch 5-Min Walkthrough
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Links for DAC -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 max-w-5xl mx-auto">
+                 <a href="https://bit.ly/DACaffiliate" target="_blank" class="bg-moon-card hover:bg-slate-700 border border-slate-700 p-4 rounded-lg flex items-center justify-between group transition-colors">
+                    <span class="text-slate-300 text-sm group-hover:text-white font-medium"><i class="fa-solid fa-book-open mr-2 text-moon-teal"></i> Opportunity Overview (Comp Plan)</span>
+                    <i class="fa-solid fa-external-link-alt text-slate-500"></i>
+                 </a>
+                 <a href="https://bit.ly/DACagency" target="_blank" class="bg-moon-card hover:bg-slate-700 border border-slate-700 p-4 rounded-lg flex items-center justify-between group transition-colors">
+                    <span class="text-slate-300 text-sm group-hover:text-white font-medium"><i class="fa-solid fa-signature mr-2 text-moon-teal"></i> Instant Agent Signup</span>
+                    <i class="fa-solid fa-external-link-alt text-slate-500"></i>
+                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Grid -->
+    <section class="py-12 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <h3 class="text-2xl font-header font-bold text-white mb-8 border-l-4 border-moon-teal pl-4">The Funding Arsenal</h3>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- ROK Financial -->
+                <div class="bg-moon-card border border-slate-700 rounded-xl p-8 card-hover transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl text-white"><i class="fa-solid fa-gem"></i></div>
+                        <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">Broker Powerhouse</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">ROK Financial</h4>
+                    <p class="text-moon-teal text-sm font-semibold mb-4">Earn BIG Broker Commissions</p>
+                    <p class="text-slate-400 text-sm mb-6 h-10">Access 75+ lenders, lightning-fast approvals, and some of the highest tier payouts in the industry.</p>
+                    <a href="https://bit.ly/rockfi-affiliate" target="_blank" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg font-bold transition-colors">
+                        Partner with ROK
+                    </a>
+                </div>
+
+                <!-- 7 Figures Funding -->
+                <div class="bg-moon-card border border-slate-700 rounded-xl p-8 card-hover transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl text-white"><i class="fa-solid fa-credit-card"></i></div>
+                        <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">0% Funding</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">7 Figures Funding</h4>
+                    <p class="text-moon-teal text-sm font-semibold mb-4">Credit Stacking Partner</p>
+                    <p class="text-slate-400 text-sm mb-6 h-10">Earn commissions helping entrepreneurs secure $50K–$250K in 0% interest capital. High demand product.</p>
+                    <a href="https://bit.ly/3PFLCff" target="_blank" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg font-bold transition-colors">
+                        Start Credit Stacking
+                    </a>
+                </div>
+
+                <!-- Credit Suite -->
+                <div class="bg-moon-card border border-slate-700 rounded-xl p-8 card-hover transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl text-white"><i class="fa-solid fa-layer-group"></i></div>
+                        <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">SaaS Model</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">Credit Suite</h4>
+                    <p class="text-moon-teal text-sm font-semibold mb-4">Business Credit & Funding</p>
+                    <p class="text-slate-400 text-sm mb-6 h-10">Sell business credit building as a service. Great for recurring revenue and high-ticket coaching upsells.</p>
+                    <a href="https://bit.ly/creditsuiteaffiliate" target="_blank" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg font-bold transition-colors">
+                        Join Credit Suite
+                    </a>
+                </div>
+
+                <!-- National Business Capital -->
+                <div class="bg-moon-card border border-slate-700 rounded-xl p-8 card-hover transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl text-white"><i class="fa-solid fa-building-columns"></i></div>
+                        <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">White Glove</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">National Business Capital</h4>
+                    <p class="text-moon-teal text-sm font-semibold mb-4">Referral Partner Program</p>
+                    <p class="text-slate-400 text-sm mb-6 h-10">Offer 30+ lending products. They handle the underwriting and closing with a white-glove touch.</p>
+                    <a href="https://bit.ly/nbcaffiliate" target="_blank" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg font-bold transition-colors">
+                        Become a Partner
+                    </a>
+                </div>
+
+                <!-- Finance Factory -->
+                <div class="bg-moon-card border border-slate-700 rounded-xl p-8 card-hover transition-all duration-300 md:col-span-2">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="flex-1 text-center md:text-left">
+                            <h4 class="text-xl font-bold text-white mb-1">Finance Factory</h4>
+                            <p class="text-moon-teal text-sm font-semibold mb-2">Funding Consultant Partner</p>
+                            <p class="text-slate-400 text-sm">Offer personal + business funding programs with premium payouts. Excellent training provided.</p>
+                        </div>
+                        <a href="https://bit.ly/financefactory-affiliate" target="_blank" class="w-full md:w-auto px-8 bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg font-bold transition-colors whitespace-nowrap">
+                            Check Out Finance Factory
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moonshine Ecosystem -->
+    <section class="py-16 px-6 bg-moon-darker border-t border-slate-800">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-header font-bold text-white mb-4">The <span class="text-moon-teal">Funding Partners OS</span> Ecosystem</h2>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto">Don't just get links. Get the training, tools, and automations to actually sell this stuff.</p>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="https://www.distilledfunding.com/partners" target="_blank" class="group bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-moon-teal transition-all">
+                    <i class="fa-solid fa-handshake text-moon-teal text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h5 class="text-white font-bold mb-2">Partner Portal</h5>
+                    <p class="text-xs text-slate-500">Access resources</p>
+                </a>
+                
+                <a href="https://www.distilledfunding.com/group/moonshine-moneymakers/" target="_blank" class="group bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-moon-teal transition-all">
+                    <i class="fa-solid fa-users text-moon-teal text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h5 class="text-white font-bold mb-2">Community</h5>
+                    <p class="text-xs text-slate-500">Join the MoneyMakers</p>
+                </a>
+                
+                <a href="https://tally.so/r/mOe658" target="_blank" class="group bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-moon-teal transition-all">
+                    <i class="fa-solid fa-file-signature text-moon-teal text-3xl mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h5 class="text-white font-bold mb-2">Apply Now</h5>
+                    <p class="text-xs text-slate-500">Become a Broker</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-moon-dark py-12 text-center text-slate-600 text-xs border-t border-slate-800">
+        <div class="container mx-auto">
+            <!-- Quick Links Navigation -->
+            <div class="flex justify-center gap-8 text-sm font-semibold text-slate-400 mb-8">
+                <a href="index.html" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Home</a>
+                <a href="marketplace.html" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Marketplace</a>
+                <a href="#" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Login</a>
+            </div>
+            
+            <p class="mb-2">&copy; <span id="year"></span> Funding Partners OS. All rights reserved.</p>
+            <p>We may earn commissions from links on this page. We only recommend partners we trust.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
