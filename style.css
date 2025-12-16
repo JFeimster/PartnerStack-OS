@@ -1,0 +1,85 @@
+/* Funding Partners OS - Custom Styles
+   Import this file in your HTML <head> AFTER the Tailwind CDN 
+   <link rel="stylesheet" href="style.css">
+*/
+
+/* --- Custom Glow Effects --- */
+.drop-shadow-glow {
+    filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.5));
+}
+
+/* --- Card Hover Effects (Marketplace) --- */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.15);
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggered Animation Delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* --- Marquee Animation (Lender Logos) --- */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+}
+
+/* Pause animation on hover for better UX */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+/* --- Form Focus State Override --- */
+/* Gives the inputs a specific glow matching the theme */
+input:focus {
+    box-shadow: 0 0 0 2px rgba(45, 212, 191, 0.2), 0 0 15px rgba(45, 212, 191, 0.1);
+}
+
+/* --- Accordion / Details Styles --- */
+/* Smooth reveal for FAQ answers */
+details[open] summary ~ * {
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+details > summary {
+    list-style: none;
+}
+
+/* Hide default triangle */
+details > summary::-webkit-details-marker {
+    display: none;
+}
