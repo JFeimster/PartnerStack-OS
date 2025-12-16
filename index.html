@@ -16,6 +16,9 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Tailwind Config for Custom Colors/Fonts -->
     <script>
         tailwind.config = {
@@ -39,64 +42,6 @@
             }
         }
     </script>
-
-    <!-- Custom Styles -->
-    <style>
-        /* Custom Glow Effects */
-        .drop-shadow-glow {
-            filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.5));
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in-up {
-            opacity: 0; /* Start hidden */
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        
-        /* Marquee Animation for Logos */
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        
-        .marquee-content {
-            display: inline-flex;
-            animation: scroll 30s linear infinite;
-        }
-
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-400 { animation-delay: 0.4s; }
-        .delay-500 { animation-delay: 0.5s; }
-
-        /* Form Focus State Override */
-        input:focus {
-            box-shadow: 0 0 0 2px rgba(45, 212, 191, 0.2), 0 0 15px rgba(45, 212, 191, 0.1);
-        }
-        
-        /* Accordion Open State Styling */
-        details[open] summary ~ * {
-            animation: fadeInUp 0.3s ease-in-out;
-        }
-        
-        details > summary {
-            list-style: none;
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-    </style>
 </head>
 <body class="bg-moon-dark text-slate-100 font-sans antialiased overflow-x-hidden relative">
 
@@ -322,21 +267,53 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Benefits (Shortened for brevity but functionality remains) -->
+                <!-- Benefit Card 1 -->
                 <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
-                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                    </div>
                     <h4 class="font-bold text-xl text-white mb-3">Highest Commissions</h4>
-                    <p class="text-slate-400 text-sm">Stop settling for 1-2%. Earn up to 4-6% on select products and keep more of what you kill.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Stop settling for 1-2%. Earn up to 4-6% on select products and keep more of what you kill.</p>
                 </div>
+                <!-- Benefit Card 2 -->
                 <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
-                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
                     <h4 class="font-bold text-xl text-white mb-3">White-Label Tech</h4>
-                    <p class="text-slate-400 text-sm">Your brand, our engine. Get a fully branded portal to submit deals, track status, and manage your team.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Your brand, our engine. Get a fully branded portal to submit deals, track status, and manage your team.</p>
                 </div>
+                <!-- Benefit Card 3 -->
                 <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
-                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
                     <h4 class="font-bold text-xl text-white mb-3">Masterclass Training</h4>
-                    <p class="text-slate-400 text-sm">From "Zero to First Deal" in 7 days. We teach you exactly how to find business owners who need money now.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">From "Zero to First Deal" in 7 days. We teach you exactly how to find business owners who need money now.</p>
+                </div>
+                <!-- Benefit Card 4 -->
+                <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h4 class="font-bold text-xl text-white mb-3">Override Income</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Build a team. Earn a percentage on every deal your sub-agents close. True passive leverage.</p>
+                </div>
+                <!-- Benefit Card 5 -->
+                <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-filter-circle-dollar"></i>
+                    </div>
+                    <h4 class="font-bold text-xl text-white mb-3">Exclusive Products</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Access "0% Interest Stacking," "Creative Financing," and other niche products banks won't touch.</p>
+                </div>
+                <!-- Benefit Card 6 -->
+                <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h4 class="font-bold text-xl text-white mb-3">Deal Desk Support</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Stuck on a tricky file? Our internal Deal Desk will structure it for you to ensure it funds.</p>
                 </div>
             </div>
             
@@ -407,13 +384,14 @@
             </div>
             
             <!-- Quick Links Navigation -->
-            <div class="flex justify-center gap-8 text-sm font-semibold text-slate-400">
+            <div class="flex justify-center gap-8 text-sm font-semibold text-slate-400 mb-8">
                 <a href="index.html" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Home</a>
                 <a href="marketplace.html" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Marketplace</a>
                 <a href="#" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Login</a>
             </div>
-
-            <p class="text-xs text-slate-600">&copy; <span id="year"></span> Funding Partners OS. All rights reserved.</p>
+            
+            <p class="mb-2">&copy; <span id="year"></span> Funding Partners OS. All rights reserved.</p>
+            <p>We may earn commissions from links on this page. We only recommend partners we trust.</p>
         </div>
     </footer>
 
@@ -431,46 +409,6 @@
     </div>
 
     <!-- Scripts -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('year').textContent = new Date().getFullYear();
-
-            // Sticky Bar Logic
-            const stickyCta = document.getElementById('stickyCta');
-            const heroSection = document.querySelector('header');
-            
-            window.addEventListener('scroll', () => {
-                const triggerPoint = heroSection.offsetHeight * 0.5;
-                if (window.scrollY > triggerPoint) {
-                    stickyCta.classList.remove('translate-y-full');
-                } else {
-                    stickyCta.classList.add('translate-y-full');
-                }
-            });
-
-            // Form Handling
-            const form = document.getElementById('heroForm');
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const btn = form.querySelector('button');
-                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
-                btn.disabled = true;
-                btn.classList.add('opacity-75', 'cursor-not-allowed');
-                setTimeout(() => {
-                    window.location.href = "https://tally.so/r/mOe658";
-                }, 800);
-            });
-        });
-
-        function scrollToForm() {
-            const formElement = document.querySelector('form');
-            const yOffset = -150; 
-            const y = formElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({top: y, behavior: 'smooth'});
-            setTimeout(() => {
-                formElement.querySelector('input').focus();
-            }, 800);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
