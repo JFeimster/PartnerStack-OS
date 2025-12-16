@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Partners OS | High-Ticket Affiliate Program</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind Config for Custom Colors/Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        moon: {
+                            dark: '#0f172a', /* Slate 900 */
+                            darker: '#020617', /* Slate 950 */
+                            card: '#1e293b', /* Slate 800 */
+                            teal: '#2dd4bf', /* Teal 400 */
+                            amber: '#d97706', /* Amber 600 */
+                            amberhover: '#b45309', /* Amber 700 */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        header: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Custom Glow Effects */
+        .drop-shadow-glow {
+            filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.5));
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in-up {
+            opacity: 0; /* Start hidden */
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Marquee Animation for Logos */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .marquee-content {
+            display: inline-flex;
+            animation: scroll 30s linear infinite;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+
+        /* Form Focus State Override */
+        input:focus {
+            box-shadow: 0 0 0 2px rgba(45, 212, 191, 0.2), 0 0 15px rgba(45, 212, 191, 0.1);
+        }
+        
+        /* Accordion Open State Styling */
+        details[open] summary ~ * {
+            animation: fadeInUp 0.3s ease-in-out;
+        }
+        
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-moon-dark text-slate-100 font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Navbar -->
+    <nav class="w-full py-5 px-6 md:px-12 flex justify-between items-center absolute top-0 left-0 z-20">
+        <div class="flex items-center gap-2 text-2xl font-header font-bold tracking-wider text-white">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-moon text-moon-teal drop-shadow-glow"></i> 
+                FUNDING PARTNERS <span class="text-moon-teal">OS</span>
+            </a>
+        </div>
+        <!-- Standardized Menu: Home Active -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-sm font-bold text-white border-b-2 border-moon-teal pb-0.5">Home</a>
+            <a href="marketplace.html" class="text-sm font-semibold text-slate-300 hover:text-moon-teal transition-colors">Marketplace</a>
+            <a href="#" class="text-sm font-semibold text-slate-400 hover:text-white transition-colors">
+                Partner Login <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden text-2xl text-white">
+            <a href="marketplace.html"><i class="fa-solid fa-store"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center pt-28 pb-16 md:pt-0">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-r from-moon-dark via-moon-dark/95 to-moon-dark/80"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                
+                <!-- Left Content -->
+                <div class="lg:w-3/5 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-moon-teal/30 bg-moon-teal/10 text-moon-teal text-sm font-semibold mb-2 animate-fade-in-up">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
+                        </span>
+                        ACCEPTING NEW PARTNERS
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-header font-bold leading-tight text-white animate-fade-in-up delay-100">
+                        Earn <span class="text-transparent bg-clip-text bg-gradient-to-r from-moon-teal to-blue-400">High-Ticket Commissions</span> Funding Small Businesses
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-slate-300 leading-relaxed animate-fade-in-up delay-200">
+                        Join the #1 funding partner network. Access top-tier lenders, "0% interest" products, and earn up to 4% per deal—no license required.
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-slate-400 animate-fade-in-up delay-300">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-moon-teal"></i> Weekly Payouts</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-moon-teal"></i> White-Label Portal</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-moon-teal"></i> 100+ Lenders</div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up delay-300 mt-4">
+                        <button onclick="scrollToForm()" class="bg-moon-amber hover:bg-moon-amberhover text-white px-8 py-4 rounded-lg font-bold text-lg shadow-[0_0_20px_rgba(217,119,6,0.4)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rocket"></i> Start Your Agency Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Form Card -->
+                <div class="lg:w-2/5 w-full animate-fade-in-up delay-500">
+                    <div class="bg-moon-card/90 backdrop-blur-md border border-slate-700 rounded-2xl shadow-2xl p-6 md:p-8 relative overflow-hidden group">
+                        <div class="absolute -top-10 -right-10 w-32 h-32 bg-moon-teal/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                        <h3 class="text-2xl font-header font-bold text-white mb-2 text-center">Unlock Partner Access</h3>
+                        <p class="text-slate-400 text-center text-sm mb-6">Watch the training & see the commission structure.</p>
+                        
+                        <form id="heroForm" class="space-y-4">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wide text-slate-400 font-bold mb-1 ml-1">First Name</label>
+                                <input type="text" name="name" required class="w-full bg-moon-dark border border-slate-600 rounded-lg px-4 py-4 h-14 text-lg text-white focus:outline-none focus:border-moon-teal focus:ring-1 focus:ring-moon-teal transition-colors" placeholder="e.g. John">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs uppercase tracking-wide text-slate-400 font-bold mb-1 ml-1">Email Address</label>
+                                <input type="email" name="email" required class="w-full bg-moon-dark border border-slate-600 rounded-lg px-4 py-4 h-14 text-lg text-white focus:outline-none focus:border-moon-teal focus:ring-1 focus:ring-moon-teal transition-colors" placeholder="e.g. john@example.com">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs uppercase tracking-wide text-slate-400 font-bold mb-1 ml-1">Mobile Number <span class="text-slate-600 normal-case">(Optional)</span></label>
+                                <input type="tel" name="phone" class="w-full bg-moon-dark border border-slate-600 rounded-lg px-4 py-4 h-14 text-lg text-white focus:outline-none focus:border-moon-teal focus:ring-1 focus:ring-moon-teal transition-colors" placeholder="(555) 123-4567">
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-moon-amber to-orange-600 hover:from-orange-600 hover:to-moon-amber text-white font-bold py-4 rounded-lg shadow-lg text-lg transition-all transform hover:scale-[1.02] mt-2 group-hover:shadow-[0_0_20px_rgba(217,119,6,0.3)]">
+                                <span class="mr-2">▶️</span> Watch the Free Training
+                            </button>
+                            
+                            <p class="text-xs text-center text-slate-600 mt-4">
+                                100% Secure. We never sell your data.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Lender Network Logos (Marquee Effect) -->
+    <div class="border-y border-slate-800 bg-moon-darker py-8 overflow-hidden">
+        <div class="marquee-container">
+            <div class="marquee-content gap-16 text-3xl text-slate-700 px-4">
+                <i class="fa-brands fa-stripe" title="Payment Networks"></i>
+                <i class="fa-brands fa-amazon-pay" title="E-com Funding"></i>
+                <i class="fa-solid fa-building-columns" title="Top Banks"></i>
+                <i class="fa-solid fa-chart-line" title="Fintech Growth"></i>
+                <i class="fa-solid fa-sack-dollar" title="Private Capital"></i>
+                <i class="fa-brands fa-cc-visa" title="Card Programs"></i>
+                <!-- Duplicates for scroll -->
+                <i class="fa-brands fa-stripe" title="Payment Networks"></i>
+                <i class="fa-brands fa-amazon-pay" title="E-com Funding"></i>
+                <i class="fa-solid fa-building-columns" title="Top Banks"></i>
+                <i class="fa-solid fa-chart-line" title="Fintech Growth"></i>
+                <i class="fa-solid fa-sack-dollar" title="Private Capital"></i>
+                <i class="fa-brands fa-cc-visa" title="Card Programs"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reality Check: Old Way vs New Way -->
+    <section class="py-20 bg-moon-darker relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-header font-bold text-white mb-2">Stop Chasing Pennies. Start Moving Capital.</h2>
+                <p class="text-slate-400">Why smart affiliates are switching to High-Ticket Funding.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                <!-- The Old Way -->
+                <div class="bg-slate-900/80 p-8 md:p-12 border-b md:border-b-0 md:border-r border-slate-800 relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-slate-700"></div>
+                    <h3 class="text-xl font-bold text-slate-400 mb-6 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> The Old Model</h3>
+                    <ul class="space-y-4 text-slate-500 font-medium">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> Low Ticket ($50 comms)</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> Requires 1,000s of clicks</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> Dealing with refunds & chargebacks</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> High competition, low saturation</li>
+                    </ul>
+                </div>
+
+                <!-- The Partner OS Way -->
+                <div class="bg-moon-card p-8 md:p-12 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-moon-teal to-blue-500"></div>
+                    <!-- Subtle glow bg -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-moon-teal/5 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2"><i class="fa-solid fa-bolt text-moon-teal"></i> The Funding OS Model</h3>
+                    <ul class="space-y-4 text-slate-200 font-semibold relative z-10">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-moon-teal mt-1"></i> <span class="text-white">High Ticket ($2k - $10k+ comms)</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-moon-teal mt-1"></i> Only need 1-2 deals a month</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-moon-teal mt-1"></i> B2B Professionalism (No refunds)</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-moon-teal mt-1"></i> Massive demand (Businesses NEED money)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Roadmap -->
+    <section class="py-20 bg-moon-dark border-t border-slate-800">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-header font-bold text-white">How The Commission Engine Works</h2>
+                <div class="h-1 w-20 bg-moon-teal mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Connector Line (Desktop Only) -->
+                <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-slate-800 -z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-moon-card border-2 border-slate-700 rounded-full flex items-center justify-center text-3xl text-moon-teal shadow-[0_0_20px_rgba(45,212,191,0.2)] mb-6">
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                    </div>
+                    <div class="bg-moon-card p-6 rounded-xl border border-slate-800">
+                        <span class="text-5xl font-header font-bold text-slate-800 absolute top-20 right-4 opacity-50">01</span>
+                        <h4 class="text-xl font-bold text-white mb-2">Identify</h4>
+                        <p class="text-slate-400 text-sm">Use our proven scripts to find business owners who need capital for inventory, marketing, or expansion.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-moon-card border-2 border-slate-700 rounded-full flex items-center justify-center text-3xl text-moon-teal shadow-[0_0_20px_rgba(45,212,191,0.2)] mb-6">
+                        <i class="fa-solid fa-upload"></i>
+                    </div>
+                    <div class="bg-moon-card p-6 rounded-xl border border-slate-800">
+                        <span class="text-5xl font-header font-bold text-slate-800 absolute top-20 right-4 opacity-50">02</span>
+                        <h4 class="text-xl font-bold text-white mb-2">Submit</h4>
+                        <p class="text-slate-400 text-sm">Upload the lead to your white-label portal. Our internal "Deal Desk" structures the loan for you.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-moon-card border-2 border-slate-700 rounded-full flex items-center justify-center text-3xl text-moon-teal shadow-[0_0_20px_rgba(45,212,191,0.2)] mb-6">
+                        <i class="fa-solid fa-university"></i>
+                    </div>
+                    <div class="bg-moon-card p-6 rounded-xl border border-slate-800">
+                        <span class="text-5xl font-header font-bold text-slate-800 absolute top-20 right-4 opacity-50">03</span>
+                        <h4 class="text-xl font-bold text-white mb-2">Get Paid</h4>
+                        <p class="text-slate-400 text-sm">The lender funds the deal. You get a wire notification directly to your bank account. Rinse and repeat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner With Us (Benefit Stack) -->
+    <section class="py-20 bg-moon-darker relative">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-header font-bold text-white mb-4">
+                    The "Unfair Advantage" for Funding Agents
+                </h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Most programs hide their best products. We give you the keys to the entire kingdom.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Benefits (Shortened for brevity but functionality remains) -->
+                <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                    <h4 class="font-bold text-xl text-white mb-3">Highest Commissions</h4>
+                    <p class="text-slate-400 text-sm">Stop settling for 1-2%. Earn up to 4-6% on select products and keep more of what you kill.</p>
+                </div>
+                <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4 class="font-bold text-xl text-white mb-3">White-Label Tech</h4>
+                    <p class="text-slate-400 text-sm">Your brand, our engine. Get a fully branded portal to submit deals, track status, and manage your team.</p>
+                </div>
+                <div class="bg-moon-card p-8 rounded-xl border border-slate-700 hover:border-moon-teal/50 transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.1)] group">
+                    <div class="w-14 h-14 rounded-full bg-moon-teal/10 flex items-center justify-center text-moon-teal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h4 class="font-bold text-xl text-white mb-3">Masterclass Training</h4>
+                    <p class="text-slate-400 text-sm">From "Zero to First Deal" in 7 days. We teach you exactly how to find business owners who need money now.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button onclick="scrollToForm()" class="bg-moon-amber hover:bg-moon-amberhover text-white px-10 py-5 rounded-lg font-bold text-xl shadow-lg transition-all transform hover:scale-105">
+                    🚀 Yes, I Want the Free Training
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wall of Wins -->
+    <section class="py-20 bg-moon-dark relative overflow-hidden">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-header font-bold text-white text-center mb-12">The "Wall of Wins"</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl relative">
+                    <p class="text-slate-300 mb-6 italic">"I was selling SEO services for $500/mo. My first funding deal paid me $3,400. I literally quit my client work the next week."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-moon-teal">SJ</div>
+                        <div><h5 class="text-white font-bold text-sm">Sarah J.</h5><p class="text-slate-500 text-xs">Former SEO Agency Owner</p></div>
+                    </div>
+                </div>
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl relative">
+                    <p class="text-slate-300 mb-6 italic">"The white label portal is insane. My clients think I have a whole team of underwriters. Funding Partners OS makes me look like a pro."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-moon-teal">MT</div>
+                        <div><h5 class="text-white font-bold text-sm">Mike T.</h5><p class="text-slate-500 text-xs">Real Estate Investor</p></div>
+                    </div>
+                </div>
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl relative">
+                    <p class="text-slate-300 mb-6 italic">"Finally a side hustle that actually scales. I just brought on my 3rd sub-agent and I'm making overrides while I sleep."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-moon-teal">DR</div>
+                        <div><h5 class="text-white font-bold text-sm">David R.</h5><p class="text-slate-500 text-xs">Sales Professional</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-20 bg-moon-darker">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-header font-bold text-white text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="group bg-moon-card border border-slate-800 rounded-lg open:border-moon-teal/50 transition-all">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-bold text-lg select-none">Do I need a finance degree?<span class="transition-transform group-open:rotate-180 text-moon-teal"><i class="fa-solid fa-chevron-down"></i></span></summary>
+                    <div class="p-6 pt-0 text-slate-400">No. Since we deal primarily with commercial business loans (B2B), most states do not require a specific license. We provide training.</div>
+                </details>
+                <details class="group bg-moon-card border border-slate-800 rounded-lg open:border-moon-teal/50 transition-all">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-bold text-lg select-none">Is this a course?<span class="transition-transform group-open:rotate-180 text-moon-teal"><i class="fa-solid fa-chevron-down"></i></span></summary>
+                    <div class="p-6 pt-0 text-slate-400">This is a partnership. We win when you fund deals. Training is included to help you succeed.</div>
+                </details>
+                <details class="group bg-moon-card border border-slate-800 rounded-lg open:border-moon-teal/50 transition-all">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer text-white font-bold text-lg select-none">How fast do I get paid?<span class="transition-transform group-open:rotate-180 text-moon-teal"><i class="fa-solid fa-chevron-down"></i></span></summary>
+                    <div class="p-6 pt-0 text-slate-400">We process commission payouts weekly via direct deposit once the lender releases funds.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Navigation -->
+    <footer class="bg-moon-dark py-16 px-6 border-t border-slate-800 pb-32">
+        <div class="container mx-auto max-w-3xl text-center space-y-8">
+            <div class="text-2xl font-header font-bold tracking-wider text-slate-700">
+                <i class="fa-solid fa-moon"></i> FUNDING PARTNERS OS
+            </div>
+            
+            <!-- Quick Links Navigation -->
+            <div class="flex justify-center gap-8 text-sm font-semibold text-slate-400">
+                <a href="index.html" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Home</a>
+                <a href="marketplace.html" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Marketplace</a>
+                <a href="#" class="hover:text-moon-teal transition-colors border-b border-transparent hover:border-moon-teal">Login</a>
+            </div>
+
+            <p class="text-xs text-slate-600">&copy; <span id="year"></span> Funding Partners OS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom CTA -->
+    <div id="stickyCta" class="fixed bottom-0 left-0 w-full bg-moon-card/95 backdrop-blur-lg border-t border-moon-teal/30 p-4 z-50 transform translate-y-full transition-transform duration-300 shadow-[0_-5px_20px_rgba(0,0,0,0.5)]">
+        <div class="container mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="hidden sm:block">
+                <span class="font-header font-bold text-white text-lg">Ready to Launch?</span>
+                <span class="text-slate-400 text-sm block">Spots are limited for this cohort.</span>
+            </div>
+            <button onclick="scrollToForm()" class="w-full sm:w-auto bg-moon-amber hover:bg-moon-amberhover text-white font-bold py-3 px-8 rounded-lg shadow-lg flex items-center justify-center gap-2">
+                <span>▶️</span> Unlock Access Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Sticky Bar Logic
+            const stickyCta = document.getElementById('stickyCta');
+            const heroSection = document.querySelector('header');
+            
+            window.addEventListener('scroll', () => {
+                const triggerPoint = heroSection.offsetHeight * 0.5;
+                if (window.scrollY > triggerPoint) {
+                    stickyCta.classList.remove('translate-y-full');
+                } else {
+                    stickyCta.classList.add('translate-y-full');
+                }
+            });
+
+            // Form Handling
+            const form = document.getElementById('heroForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button');
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-not-allowed');
+                setTimeout(() => {
+                    window.location.href = "https://tally.so/r/mOe658";
+                }, 800);
+            });
+        });
+
+        function scrollToForm() {
+            const formElement = document.querySelector('form');
+            const yOffset = -150; 
+            const y = formElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+            setTimeout(() => {
+                formElement.querySelector('input').focus();
+            }, 800);
+        }
+    </script>
+</body>
+</html>
